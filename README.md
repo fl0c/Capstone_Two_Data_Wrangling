@@ -37,7 +37,7 @@ A development summary table is created to gain a quick overview of key developme
 ## 5. Machine Learning Algorithms and Prediction
 The data was split into train-test sets to build a regression model for predicting prices of future launches. OLS, linear, ridge and lasso regression were used. Hyperparameter tuning was performed with Grid Search for linear regression to identify the key features. The scores for various alpha values are tested for the Ridge and Lasso models. The Ridge model performs best, with the highest coefficient of determination for the predictions at 0.96. An alpha of 0.01 was selected. There are few data samples and many features (after encoding categorical features), so the Ridge model is suitable. 
 
-![ridge_alpha](https://user-images.githubusercontent.com/85296113/147672618-5da52872-41b8-488a-9077-bef782f5e10d.png)
+![ridge_alpha](https://user-images.githubusercontent.com/85296113/147672928-dc7bfaa8-54bf-43c5-8f5e-a548d737e734.png)
 ![ridge_fit](https://user-images.githubusercontent.com/85296113/147672642-de34cc31-1aff-49f7-93df-d2086045999c.png)
 
 ## 6. Future Improvements
