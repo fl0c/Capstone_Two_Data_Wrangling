@@ -1,4 +1,4 @@
-# Capstone_Two_Data_Wrangling
+# Price analysis of first hand residential sales
 *This project extracts and combines information from several pdfs, to analyse and predict residential sales data of a newly launched pre-sale project (One Victoria in Kai Tak, Hong Kong).*
 
 ## 1. Data
@@ -31,10 +31,8 @@ Of the launched units, the price per saleable area increases in subsequent price
 ![dvptsum](https://user-images.githubusercontent.com/85296113/147651249-29fff7f5-9ff8-4570-8113-3cd994adf03e.png)
 A development summary table is created to gain a quick overview of key development parameters, e.g. average flat size and average price per saleable area. 
 
-## 5. Machine Learning Algorithms
-The data was split into train-test sets to build a regression model for predicting prices of future launches. OLS, linear, ridge and lasso regression were used. The Ridge model performs best, with the highest coefficient of determination for the predictions. There are few data samples and many features (after encoding categorical features). this is 
+## 5. Machine Learning Algorithms and Prediction
+The data was split into train-test sets to build a regression model for predicting prices of future launches. OLS, linear, ridge and lasso regression were used. Hyperparameter tuning was performed with Grid Search for linear regression to identify the key features. The scores for various alpha values are tested for the Ridge and Lasso models. The Ridge model performs best, with the highest coefficient of determination for the predictions at 0.96. An alpha of 0.01 was selected. There are few data samples and many features (after encoding categorical features), so the Ridge model is suitable. 
 
-
-Ridge model performs best at predicting the price, with the highest 
-
-Ridge regression addresses some of the problems of Ordinary Least Squares by imposing a penalty on the size of the coefficients with l2 regularization.
+## 6. Future Improvements
+The flat type summary currently requires manual analysis of floor plans, the project can be extended to include image analysis to extract this data for faster analysis.
